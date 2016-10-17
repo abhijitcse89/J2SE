@@ -1,6 +1,6 @@
 package com.abhijit.j2se.oops.polymorphism;
 
-public class $6_MethodSignature {
+public class $7_MethodSignature {
 
 	/**
 	 * Method signature meant for name of the method with it's parameter but not return type
