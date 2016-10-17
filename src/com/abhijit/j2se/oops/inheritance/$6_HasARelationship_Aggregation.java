@@ -5,7 +5,7 @@ public class $6_HasARelationship_Aggregation {
  * Mobile Bluetooth obeject, Car Bluetooth object, Home PC Bluetooth Object
  * Here you can use your mobile bluetooth in car and Home PC as well
  * So, it doesn't mean that if the car is no longer exist, your mobile bluetooth is worthless. You can still use in your Home PC
- * i.e It is an weak association which is nothing Aggregation
+ * i.e It is an weak association which is nothing but Aggregation association
  */
 	
 	public static void main(String[] args) {
