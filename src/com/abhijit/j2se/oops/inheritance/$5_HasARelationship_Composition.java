@@ -6,30 +6,47 @@ public class $5_HasARelationship_Composition {
  * 
  */
 	public static void main(String[] args) {
-		OracleIndia ora =  new OracleIndia();
-		ora.triage();
-		ora.fix();
-		ora.facility();	
+			Computer com = new Computer();
+			System.out.println("\nBrowing the internet...");
+	        System.out.println("Writing some source code...");
+	        System.out.println("Saving work...\n");
+			com.allDone();
+			com=null;
 	}
 }
 
-class OracleIndia{
-	public void triage(){
-		System.out.println("Triaging the incident");
+class Computer{
+	
+	private OS os = new OS();
+	private PowerSupply ps = new PowerSupply();
+	
+	Computer(){
+		ps.powerOn();
+		os.bootUp();
 	}
-	public void fix(){
-		System.out.println("Fixing the issue");
-	}
-	public void facility(){
-		System.out.println("Oracle doesn't good in facility as compare to others");
+	
+	void allDone(){
+		os.shutDown();
+		ps.powerOff();
 	}
 }
-class Java{
-//	public static void main(String[] args) {
-//		OracleIndia ora =  new OracleIndia();
-//		ora.triage();
-//		ora.fix();
-//		ora.facility();
-//		
-//	} 
+
+class OS{
+	void bootUp(){
+		System.out.println("OS is booting up...");
+	}
+	void shutDown(){
+		System.out.println("OS is Shutting down...");
+	}
 }
+class PowerSupply{
+	 void powerOn(){
+			System.out.println("Powering on...");
+
+	 }
+	 void powerOff(){
+			System.out.println("Powering off...");
+
+	 }
+}
+
